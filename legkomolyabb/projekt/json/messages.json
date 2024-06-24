@@ -1,0 +1,38 @@
+[
+    {
+        "email": "valami@baj",
+        "id": 1,
+        "message": "f",
+        "name": "Tóth Gergő"
+    },
+    {
+        "id": 2,
+        "name": "TG",
+        "email": "valami@tg.com",
+        "message": "Nagyon szar az oldal"
+    },
+    {
+        "id": 3,
+        "name": "TG",
+        "email": "valami@tg.com",
+        "message": "Nagyon szar az oldal"
+    },
+    {
+        "id": 4,
+        "name": "hilbert generator",
+        "email": "albert@gem.com",
+        "message": "you very nice men)) we need to play CSGO in nuke map defuse bomb green"
+    },
+    {
+        "id": 5,
+        "name": "TG",
+        "email": "jolfesultkisfiu2@yahoo.com",
+        "message": "jü minden"
+    },
+    {
+        "id": 6,
+        "name": "peterke",
+        "email": "gmail@ngmail.com",
+        "message": "szar ez a kibaszott oldal"
+    }
+]

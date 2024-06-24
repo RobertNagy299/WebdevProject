@@ -1,0 +1,183 @@
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+
+/*
+
+    Main search bar and filters section
+    Moved the inline style to a CSS class instead
+
+      FLEXBOX fontosabb dolgok: (ignorald ha mar tudod)
+
+    lehet vizszintes vagy fuggoleges modon rendezni benne az elemeket
+    
+    display:flex -- ez mondja meg egy elementnek hogy flexbox legyen
+    flex-wrap: wrap; -- ez engedelyezi, hogy reszponzivan a konteneren belul 
+    maradjanak a flex item-ek, es ne legyen invisible overflow (vagyis minden
+    siman folyjon)
+    
+    justify-content: center; -- justify-content fogja vizszintes elrendezesben a megadott helyre
+    igazitani az elemeket (itt kozepre), justify-items pedig fuggoleges elrendezesben igazitja a dolgokat
+
+    flex-direction: row; --ez az ertek "row" ha vizszintes elrendezest akarsz, "column" ha fuggolegest
+
+    szoval parban megy a ketto:
+
+    HA VIZSZINTES FLEXBOX kell:
+
+    justify-content: center;
+    flex-direction: row;
+
+  
+  
+    HA FUGGOLEGES: 
+
+    justify-items: center;
+    flex-direction: column;
+
+
+    ami mindig kell az a display meg a flex-wrap. A flex-wrap default erteke a "nowrap".
+  
+*/
+.main-search-section {
+    height: fit-content; 
+    background-color: #c9dffc;
+    margin: 0 1rem;
+    padding: 3rem 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+   
+}
+
+.container{
+    width: 100%;  
+    padding:5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.caption{
+    text-align: center;
+    background-color: #c9dffc;
+    margin: 0 1rem;
+    
+}
+.filters{
+    max-width: 700px;
+    width: 67vw;
+    display:flex;
+    column-gap: 4%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.filter{
+    background-color: beige;
+    border-color: #99a1a3;
+    color:#3e4343;
+    border-radius: 0.5rem;
+    border-width: 2px;
+    align-items: center;
+    text-align: center;
+    cursor:pointer;
+    font-size: 100%;
+    padding: 3px;
+}
+.filter:hover{
+    color:rgb(30, 87, 233);
+    background-color: rgb(243, 243, 243);
+    border-color: rgb(30, 87, 233);
+}
+.filter:visited{
+    color:rgb(30, 87, 233);
+    border-color: rgb(30, 87, 233);
+}
+
+
+.search-bar1{
+    width:100%;
+    max-width: 700px;
+    background: rgb(14, 14, 59);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 20px;
+    margin-bottom: 10px;
+}
+.search-bar1 input{
+    background: transparent;
+    flex:1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color:white;
+    
+}
+::placeholder{
+    color:rgb(243, 226, 226);
+}
+.search-bar1 button image{
+    width: 25px;
+}
+.search-bar1 button{
+    border: 0;
+    width:60px;
+    height: 60px;
+    background: rgb(14, 14, 59);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.events {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:  #c9dffc;
+    text-align: center;
+}
+
+@media (max-width:720px) {
+    .main-search-section 
+    {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+}
+
+@media (max-width:400px) {
+    .search-bar1{
+        max-width: 200px;
+        width:100%;
+        background: rgb(14, 14, 59);
+        display: flex;
+        align-items: center;
+        border-radius: 60px;
+    }
+    .search-bar1 button{
+        border: 0;
+        width:60px;
+        height: 60px;
+        background: rgb(14, 14, 59);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .search-bar1 input{
+        background: transparent;
+        flex:1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 10px;
+        color:white;
+        
+    }
+}
+

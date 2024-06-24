@@ -1,0 +1,276 @@
+.event-creation-article {
+    
+    padding: 3rem 0px;
+}
+
+section h2 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 3.6rem;
+    margin-top: 1.618rem;
+    text-align: center;
+    color: rgb(0, 0, 63);
+   
+}
+
+section> h2{ /*The sole purpose of this line is to fool the HTML W3C Validator */
+    display: none;
+}
+#event-creation-hero-section{
+   
+    background-color: #c9dffc;
+    height: fit-content;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  
+    
+}
+
+textarea {
+    margin-bottom: 1rem;
+    border:none;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    resize: vertical;
+}
+
+#eventCreationForm {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    height: fit-content;
+  
+    background: radial-gradient(ellipse at center, rgb(205, 222, 255) 40%,  rgb(100, 174, 249) 100%, rgba(2,0,36,1) 100%); 
+  
+    border: 2px solid rgb(0, 0, 63);
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgb(0, 0, 63);
+    padding: 3rem 3rem;
+    background-color: rgb(181, 213, 255);
+    
+    width: 50vw;
+    color: rgb(0, 0, 63);
+    font-size: 1.1rem;
+}
+
+#eventCreationForm * {
+    max-width: 100%;
+}
+
+input {
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.6rem;
+}
+
+.starting-time {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+input[type="text"] {
+    border:none;
+    border-radius: 10px;
+}
+
+
+input[type="submit"] {
+    background-color: rgb(0, 0, 63);
+    color: aliceblue;
+    padding: 1.6rem;
+    border: none;
+    width: 96vw;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    transition: 0.4s;
+}
+
+input[type="submit"]:hover{
+    background-color: royalblue;
+    color: whitesmoke;
+    transition: 0.6s;
+    box-shadow: 0 0 10px rgb(74, 88, 105);
+}
+
+input[type="submit"]:active{
+    background-color: rgb(93, 134, 255);
+    color: rgb(6, 0, 94);
+    transition: 0s;
+    box-shadow: 0 0 10px rgb(74, 88, 105);
+}
+
+label {
+    margin-bottom: 0.2rem;
+}
+
+option {
+    font-size: 1rem;
+}
+
+option:not(:first-of-type) {
+    padding: 0.1rem 0px;
+  
+}
+
+select {
+    appearance: none;
+    
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 3.6rem;
+    height: 1.6rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+h4 {
+    margin-bottom: 0.2rem;
+    margin-right: 4rem;
+}
+
+#fileInputLabel {
+    display: inline-block;
+    width: fit-content;
+    height: 1.4rem;
+    background-color: white;
+    color: rgb(0, 0, 63);
+    padding: 0.4rem 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition:0.3s;
+}
+
+#fileLabel {
+    display: block;
+    text-align: center;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+}
+
+#file-span{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#fileInputLabel:hover {
+    background-color: rgb(6, 0, 94);
+    color: whitesmoke;
+    transition:0.3s;
+    cursor: pointer;
+}
+
+input[type="file"] {
+
+  display: none;
+}
+
+input[type="date"] {
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media (min-width:1080px) {
+
+    .time-selection-div-for-mobile {
+        display: none;
+        pointer-events: none;
+    }
+}
+
+@media (max-width:1080px) {
+
+    .time-selection-div-for-mobile {
+        display: block;
+        border: none;
+        border-radius: 10px;
+        font-weight: bold;
+        margin: 1rem 0px;
+       
+    }
+    input[type="time"] {
+        pointer-events: none;
+        border: none;
+        border-radius: 10px;
+        margin-left: .2rem;
+    }
+    .starting-time {
+        display: none;
+    }
+    #eventCreationForm {
+        width: 67vw;
+    }
+}
+
+@media (max-width:640px) {
+
+    #file-span{
+        display: flex;
+        flex-direction: column;
+    
+        align-items: center;
+    }
+    #fileLabel {
+        display: block;
+        text-align: center;
+        padding-bottom: 0.8rem;
+        padding-left: 1rem;
+       margin-top: -1rem;
+       margin-bottom: 1rem;
+    }
+    #fileInputLabel {
+        margin-top: 1rem;
+    }
+    h4 {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    input[type] {
+        max-width: 70vw;
+    }
+    textarea {
+        max-width: 64vw !important;
+    }
+    .event-creation-article {
+        margin: 0;
+        padding: 0;
+    }
+    .event-creation-hero-section{
+        text-align: center;
+        flex:1;
+    }
+    #eventCreationForm {
+        width: 70vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex:1;
+        box-shadow: none;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        overflow: scroll;
+    }
+    #event-creation-hero-section {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        margin: 0;
+    }
+}

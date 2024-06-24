@@ -1,0 +1,80 @@
+{
+    "1": {
+        "id": 2,
+        "password": "$2y$10$9FyYvyeAC3Fqh72gIyDW\/.zjMx62kRtb0AHQohHCn3iTWFF\/a1Xgq",
+        "username": "test",
+        "signedUpEvents": [
+            "5"
+        ],
+        "subscribed": false,
+        "image": "..\/images\/test.png",
+        "email": "@"
+    },
+    "2": {
+        "id": 3,
+        "password": "$2y$10$xrWpJBgVZg0w6.ruXK5T1eiAtc9.V6zRn\/adZY9xnQJTpJNwE0YL6",
+        "username": "123",
+        "signedUpEvents": [
+            "5",
+            "3",
+            "6",
+            "8"
+        ],
+        "subscribed": false,
+        "image": "..\/images\/123.png",
+        "email": "@"
+    },
+    "3": {
+        "id": 4,
+        "password": "$2y$10$hX9AB3gd.t22f9Vdt0QwVOcUtrJJPaLxB\/ug1XgV7ofKFzo8EkMXe",
+        "username": "jolfesultkisfiu",
+        "signedUpEvents": [
+            "3"
+        ],
+        "subscribed": false,
+        "image": "..\/images\/profile.jpg",
+        "email": "jolfesultkisfiu2@yahoo.com"
+    },
+    "4": {
+        "id": 5,
+        "password": "$2y$10$s6rHG59rJOwr\/UCIy2XLSevqBmhEGOS645h29HLypl84ozSHS5M2O",
+        "username": "h270187@stud.u-szeged.hu",
+        "signedUpEvents": [
+            "2"
+        ],
+        "subscribed": false,
+        "image": "..\/images\/h270187@stud.u-szeged.hu.png",
+        "email": "@"
+    },
+    "5": {
+        "id": 6,
+        "password": "$2y$10$aOMOu6j6imUg4cBhx82mJurRfI8x8KBnPd9RXy1PUT486BaVUTBym",
+        "username": "robi",
+        "signedUpEvents": [
+            "3",
+            "2",
+            "9"
+        ],
+        "subscribed": true,
+        "image": "..\/images\/robi635300.jpg",
+        "email": "afd@gmail.com"
+    },
+    "6": {
+        "id": 7,
+        "password": "$2y$10$ImGbsm2OOx2P\/ZvHKDo5DuoHB\/nFT1QBK7gAcynXRgnxRb4sIxVtq",
+        "username": "szar",
+        "signedUpEvents": [],
+        "subscribed": true,
+        "image": "..\/images\/szar.jpg",
+        "email": "nigger@nigmail.com"
+    },
+    "7": {
+        "id": 8,
+        "password": "$2y$10$4r3YwlKmsj7zs3JkeWSeAugtXyTfEHg.mIoy9BxVBDO7xHhByPQha",
+        "username": "hello",
+        "signedUpEvents": [],
+        "subscribed": true,
+        "image": "..\/images\/hello.jpg",
+        "email": "asd@asd"
+    }
+}
